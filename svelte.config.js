@@ -3,7 +3,7 @@ import preprocess from 'svelte-preprocess';
 
 //
 
-const REPO_NAME = 'your-repo-name';
+const REPO_NAME = '440';
 
 //
 

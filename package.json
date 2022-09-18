@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.43",
+		"@types/d3": "^7.4.0",
 		"layercake": "^7.0.0"
 	}
 }

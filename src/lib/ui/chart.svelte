@@ -8,7 +8,9 @@
 </script>
 
 <script lang="ts">
-	import { LayerCake } from 'layercake';
+	import { LayerCake, Svg } from 'layercake';
+	import AxisX from '$lib/layercake/axisX.svelte';
+	import AxisY from '$lib/layercake/axisY.svelte';
 
 	export let data: ChartInput;
 </script>
@@ -18,6 +20,10 @@
 <div class="chart-container">
 	<LayerCake {data} x="x" y="y">
 		<!-- Components go here -->
+		<Svg>
+			<AxisX baseline />
+			<AxisY />
+		</Svg>
 	</LayerCake>
 </div>
 

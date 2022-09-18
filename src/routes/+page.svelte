@@ -1,10 +1,14 @@
 <script lang="ts">
 	import Button from '$lib/ui/Button.svelte';
 	import Chart from '$lib/ui/chart.svelte';
-	import type { ChartDatum, ChartInput } from '$lib/ui/chart.svelte';
+	import type { ChartInput } from '$lib/ui/chart.svelte';
+
+	//
 
 	const kings = 4;
 	const cards = 40;
+
+	//
 
 	let currentKings = kings;
 	let currentCards = cards;

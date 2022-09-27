@@ -15,6 +15,16 @@
 
 	//
 
+	let history: Array<number> = [];
+
+	let runs: Array<number> = [];
+	// Stores the length of the runs
+
+	let r: number = 0;
+	// Keeps track of the current run length
+
+	//
+
 	function decreaseKings() {
 		currentKings -= 1;
 	}
@@ -30,13 +40,23 @@
 
 	//
 
+	function calcWinRatio() {
+		return (currentCards - currentKings) / currentCards;
+	}
+
+	function saveHistory() {
+		history.push(calcWinRatio());
+	}
+
 	function doPass() {
 		decreaseCards();
+		saveHistory();
 	}
 
 	function doFail() {
-		decreaseCards();
 		decreaseKings();
+		decreaseCards();
+		saveHistory();
 	}
 
 	//
